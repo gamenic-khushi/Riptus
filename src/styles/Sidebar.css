@@ -1,0 +1,28 @@
+.sidebar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #111;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  transition: opacity 0.2s;
+}
+
+.sidebar a:hover {
+  opacity: 0.45;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+}

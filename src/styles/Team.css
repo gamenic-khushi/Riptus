@@ -1,0 +1,116 @@
+.team-main {
+  margin-top: 150px;
+  flex: 1;
+  display: grid;
+  grid-template-columns: 160px 1fr;
+}
+
+/* ─── Content wrapper ─── */
+.team-content {
+  padding: 60px 40px 60px 120px;
+  display: flex;
+  flex-direction: column;
+}
+
+.team-heading {
+  font-family: 'Inter', sans-serif;
+  font-size: 52px;
+  font-weight: 700;
+  color: #111;
+  line-height: 1;
+  margin-bottom: 16px;
+}
+
+.team-bar {
+  width: 120px;
+  height: 10px;
+  border-radius: 0px;
+  background: linear-gradient(90deg, #b8e0f7, #f4a8d4);
+  margin-bottom: 28px;
+}
+
+/* ─── Member row: [text] [photo] ─── */
+.team-member {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.team-member-text {
+  width: 480px;
+  flex-shrink: 0;
+}
+
+/* Role — gradient text */
+.team-role {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  color: transparent;
+  background: linear-gradient(90deg, #a78bfa, #ec4899);
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+.team-name {
+  font-family: 'Inter', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 20px;
+}
+
+.team-bio {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  max-width: 410px;
+}
+
+.team-bio p {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #333;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+/* ─── Photo ─── */
+.team-member-photo {
+  flex-shrink: 0;
+}
+
+.team-photo {
+  width: 220px;
+  height: 260px;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  filter: grayscale(100%);
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 900px) {
+  .team-main {
+    grid-template-columns: 1fr;
+  }
+
+  .team-content {
+    padding: 40px 24px;
+  }
+
+  .team-member {
+    flex-direction: column-reverse;
+    gap: 28px;
+  }
+
+  .team-photo {
+    width: 100%;
+    height: 240px;
+  }
+}

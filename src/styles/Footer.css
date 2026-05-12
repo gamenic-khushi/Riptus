@@ -1,0 +1,12 @@
+.footer {
+  position: fixed;
+  bottom: 32px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+  letter-spacing: 0.04em;
+  pointer-events: none;
+  z-index: 5;
+}

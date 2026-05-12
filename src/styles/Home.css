@@ -1,0 +1,118 @@
+/* In your CSS or index.html */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
+/* ─── 2-column: [sidebar] [hero] ─── */
+.main {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  grid-template-rows: 1fr;
+}
+/* ─── Sidebar: sticks to bottom-left ─── */
+.sidebar {
+  align-self: end;
+  padding: 0 15px 5px;
+  z-index: 2;
+}
+
+/* ─── Hero content: fills the right column, acts as positioning context ─── */
+.hero-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 60px 40px 68px 40px;
+  min-height: 560px;
+}
+
+/* ───────────────────────────────────────────────
+   LAYER 0 — Gradient rect (rendered first in DOM)
+   Sits BEHIND all text. Never in front.
+─────────────────────────────────────────────── */
+.gradient-rect {
+  position: absolute;
+  right: 15%;           /* slightly bleed off edge */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 25%;             /* wider so it meets the text */
+  height: 85%;
+  /* border-radius: 16px; */
+  background: linear-gradient(180deg, #b8e0f7 0%, #f4a8d4 100%);
+  z-index: 0;
+}
+
+/* ───────────────────────────────────────────────
+   LAYER 1 — Hero text (rendered after rect in DOM)
+   Floats ON TOP of the gradient rect.
+─────────────────────────────────────────────── */
+.hero-text {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+/* Giant "Welcome!" — wide enough to overlap gradient rect */
+.welcome {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(90px, 11vw, 220px);
+  font-weight: 700;
+  color: #111;
+  line-height: 0.9;
+  letter-spacing: 4px;
+  white-space: nowrap;
+  margin-top: 8%;
+  margin-left: 8.1%;      /* shift left to overlap gradient */
+  width: 100%;             /* stretch full column width */
+}
+.subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(20px, 1.78vw, 42px);
+  font-weight: 80;
+  color: #000;
+  line-height: 0.95;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  margin-left: 9.2%;
+}
+
+.company-jp {
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+   font-weight: 700;
+  letter-spacing: 0.3em;
+  color: transparent;
+  background: linear-gradient(90deg, #a78bfa, #ec4899);
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline-block;
+  margin-top: 80px;
+  margin-left: 38%;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 900px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .hero-content {
+    padding: 48px 24px 60px;
+    min-height: 420px;
+  }
+
+  .welcome {
+    font-size: clamp(52px, 14vw, 110px);
+    letter-spacing: -3px;
+    white-space: normal;
+  }
+
+  .gradient-rect {
+    width: 180px;
+    height: 300px;
+  }
+}

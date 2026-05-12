@@ -1,0 +1,128 @@
+/* ─── Backdrop ─── */
+.dm-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 99;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.dm-backdrop--visible {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* ─── Panel ─── */
+.dm-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 28%;
+  min-width: 260px;
+  height: 100vh;
+  background: #000;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 40px 40px;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+}
+
+.dm-panel--open {
+  transform: translateX(0);
+}
+
+/* ✕ close */
+.dm-close {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  line-height: 1;
+  padding: 4px;
+  transition: opacity 0.2s;
+}
+
+.dm-close:hover {
+  opacity: 0.6;
+}
+
+/* Top button */
+.dm-top {
+  margin-top: -3.4%;
+  margin-left: -12%;
+  margin-bottom: 48px;
+  width: fit-content;
+}
+
+.dm-top__btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 1.7;
+  border-top: 1px solid #2dd4bf;
+  border-bottom: 1px solid #2dd4bf;
+  padding: 8px 16px;
+  transition: opacity 0.2s;
+}
+
+.dm-top__btn:hover {
+  opacity: 0.7;
+}
+
+/* Nav links */
+.dm-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  flex: 1;
+}
+
+.dm-nav a {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  transition: opacity 0.2s;
+  margin-left: 15%;
+  margin-top: 5%;
+}
+
+.dm-nav a:hover {
+  opacity: 0.55;
+}
+
+/* Bottom URL */
+.dm-url {
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  opacity: 0.7;
+  margin-top: auto;
+  transition: opacity 0.2s;
+}
+
+.dm-url:hover {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .dm-panel {
+    width: 80vw;
+  }
+}
