@@ -1,36 +1,41 @@
 .ab-wrapper {
-  padding: 60px 80px 100px 200px;
+  padding: 10px 80px 100px 200px;
   display: flex;
   flex-direction: column;
 }
 
 .ab-heading {
-  font-family: 'Inter', sans-serif;
-  font-size: 28px;
+  font-family: 'Montserrat';
+  font-size: 22px;
   font-weight: 700;
   color: #111;
   text-align: center;
   letter-spacing: 0.08em;
-  margin-bottom: 48px;
+  margin-bottom: 40px;
+  margin-right: 10.5%;
+  margin-top: -6px;
 }
 
 .ab-list {
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 8px;
 }
 
 .ab-post {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  gap: 36px;
+  gap: 40px;
+  margin-left: 27px;
 }
 
 .ab-post-img {
   flex-shrink: 0;
-  width: 240px;
-  height: 170px;
+  width: 235px;
+  height: 188px;
+  padding-top: 12px;
+  
   overflow: hidden;
 }
 
@@ -46,28 +51,30 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
-  padding-top: 4px;
+  padding-top: 40px;
 }
 
 .ab-post-title {
-  font-family: 'Inter', sans-serif;
-  font-size: 20px;
+  font-family: 'Montserrat';
+  font-size: 19px;
   font-weight: 400;
   color: #111;
-  line-height: 1.6;
+  line-height: 1.1;
   max-width: 81%;
+  margin-bottom: 8px;
 }
 
 .ab-tag {
-  background: #5bb8d4;
+  background: #4687ef;
   color: #fff;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat';
   font-size: 12px;
   font-weight: 500;
-  padding: 4px 14px;
+  padding: 1px 18px;
   border-radius: 20px;
   letter-spacing: 0.04em;
   width: fit-content;
+  margin-bottom: 8px;
 }
 
 .ab-post-meta {
@@ -77,9 +84,9 @@
 }
 
 .ab-read-more {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 13px;
-  color: #555;
+  color: #2f2e2e;
   text-decoration: none;
   letter-spacing: 0.06em;
   transition: opacity 0.2s;
@@ -95,9 +102,9 @@
 }
 
 .ab-date {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 13px;
-  color: #888;
+  color: #363535;
 }
 
 @media (max-width: 900px) {

@@ -14,32 +14,32 @@
 
 .gb-top {
   top: 0; left: 0; right: 0;
-  height: 20px;
+  height: 25px;
   background: linear-gradient(90deg, #f9c4e0 0%, #b3d9f7 35%, #d4b0f0 65%, #f9c4e0 100%);
 }
 
 .gb-bottom {
   bottom: 0; left: 0; right: 0;
-  height: 20px;
+  height: 25px;
   background: linear-gradient(90deg, #a0c8f8 0%, #d4b0f0 35%, #f9c4e0 65%, #a0c8f8 100%);
 }
 
 .gb-left {
-  left: 0; top: 20px; bottom: 20px;
-  width: 20px;
+  left: 0; top: 25px; bottom: 25px;
+  width: 25px;
   background: linear-gradient(to bottom, #f9c4e0 0%, #d4b0f0 50%, #a0c8f8 100%);
 }
 
 .gb-right {
-  right: 0; top: 20px; bottom: 20px;
-  width: 20px;
+  right: 0; top: 25px; bottom: 25px;
+  width: 25px;
   background: linear-gradient(to bottom, #f9c4e0 0%, #d4b0f0 50%, #a0c8f8 100%);
 }
 
 /* ─── Content area (inset on all 4 sides) ─── */
 .content {
-  margin: 20px;
-  min-height: calc(100vh - 40px);
+  margin: 25px;
+  min-height: calc(100vh - 50px);
   display: flex;
   flex-direction: column;
   background: #fff;

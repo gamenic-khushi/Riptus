@@ -1,6 +1,6 @@
 /* ─── Same 2-column grid as Home ─── */
 .au-main {
-  margin-top: 150px;
+  margin-top: 210px;
   flex: 1;
   display: grid;
   grid-template-columns: 160px 1fr;
@@ -12,8 +12,8 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  gap: 28px;
-  padding: 60px 20px 90px 120px;
+  gap: 60px;
+  padding: 46px 40px 50px 170px;
 }
 
 /* ─── Left: image ─── */
@@ -22,8 +22,8 @@
 }
 
 .au-image {
-  width: 240px;
-  height: 360px;
+  width: 238px;
+  height: 363px;
   object-fit: cover;
   border-radius: 0px;
   display: block;
@@ -37,55 +37,63 @@
 }
 
 .au-heading {
-  font-family: 'Inter', sans-serif;
-  font-size: 52px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 44px;
   font-weight: 700;
   color: #111;
   line-height: 1;
   margin-bottom: 16px;
+  margin-top: 5.5%;
+  margin-left: 4px;
 }
 
 /* Gradient underline bar */
 .au-bar {
-  width: 120px;
+  width: 130px;
   height: 10px;
   border-radius: 0px;
   background: linear-gradient(90deg, #b8e0f7, #f4a8d4);
-  margin-bottom: 24px;
+  margin-bottom: 25px;
+  margin-left: 6px;
+
 }
 
 .au-body {
-  font-family: 'Inter', sans-serif;
-  font-size: 15px;
-  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15.2px;
+  font-weight: 520;
   color: #333;
   line-height: 1.8;
-  max-width: 520px;
+  max-width: 558px;
+  margin-left: 5px;
+  letter-spacing: 0.9px;
 }
 
 .au-tagline {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat';
   font-size: 16px;
   font-weight: 700;
   color: #111;
-  margin-top: 20px;
+  margin-top: 7px;
   line-height: 1.6;
+ margin-left: 4px;
 }
 
 .au-list {
   list-style: disc;
-  margin-top: 16px;
-  padding-left: 20px;
+  margin-top: 2px;
+  margin-left: 12px;
+  padding-left: 22px;
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 1px;
 }
 
 .au-list li {
-  font-family: 'Inter', sans-serif;
-  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
   color: #333;
-  line-height: 2;
+  line-height: 1.6;
 }
 
 /* ─── Responsive ─── */

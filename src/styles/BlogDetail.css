@@ -1,19 +1,19 @@
 .bd-wrapper {
-  padding: 60px 60px 100px;
+  padding: 0px 40px 100px;
   display: flex;
   flex-direction: column;
   gap: 24px;
-  max-width: 850px;
-  margin: 0 auto;
+  max-width: 870px;
+  margin: -30px auto 0;
 }
 
 .bd-title {
-  font-family: 'Inter', sans-serif;
-  font-size: 36px;
-  font-weight: 700;
+  font-family: 'Montserrat';
+  font-size: 38px;
+  font-weight: 800;
   color: #111;
   line-height: 1.5;
- 
+ letter-spacing: 0.01em;
 }
 
 .bd-meta {
@@ -23,34 +23,34 @@
 }
 
 .bd-tag {
-  background: #5bb8d4;
+  background: #558cf1;
   color: #fff;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 12px;
   font-weight: 500;
-  padding: 4px 14px;
+  padding: 4px 13px;
   border-radius: 20px;
   letter-spacing: 0.04em;
 }
 
 .bd-date {
-  font-family: 'Inter', sans-serif;
-  font-size: 14px;
-  color: #888;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  color: #4f4f4f;
   letter-spacing: 0.06em;
 }
 
 .bd-image {
   width: 100%;
-  max-width: 580px;
-  height: 400px;
+  max-width: 590px;
+  height: 330px;
   display: block;
   object-fit: cover;
-  margin-left: 70px;
+  margin-left: 92px;
 }
 
 .bd-back {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 13px;
   color: #555;
   text-decoration: none;
@@ -65,7 +65,7 @@
 
 .bd-notfound {
   padding: 80px;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   color: #888;
 }

@@ -15,12 +15,22 @@ section[id] {
 }
 
 body {
-  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', 'Helvetica Neue', sans-serif;
+  font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', 'Helvetica Neue', sans-serif;
   background: #fff;
   min-height: 100vh;
   color: #111;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 #root {

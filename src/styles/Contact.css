@@ -6,40 +6,42 @@
 }
 
 .ct-content {
-  padding: 60px 40px 120px 120px;
+  padding: 66px 20px 100px 164px;
   display: flex;
   flex-direction: column;
 }
 
 .ct-heading {
-  font-family: 'Inter', sans-serif;
-  font-size: 52px;
+  font-family: 'Montserrat';
+  font-size: 42px;
   font-weight: 700;
   color: #111;
   line-height: 1;
-  margin-bottom: 16px;
+  margin-bottom: 25px;
 }
 
 .ct-bar {
-  width: 160px;
-  height: 10px;
+  width: 130px;
+  height: 9px;
   border-radius: 0px;
   background: linear-gradient(90deg, #b8e0f7, #f4a8d4);
-  margin-bottom: 32px;
+  margin-bottom: 26px;
 }
 
 .ct-address {
   display: flex;
   flex-direction: column;
   gap: 2px;
-  margin-bottom: 40px;
+  margin-bottom: 6.2%;
 }
 
 .ct-address p {
-  font-family: 'Inter', sans-serif;
-  font-size: 15px;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-weight: 500;
   color: #111;
-  line-height: 1.8;
+  line-height: 1.4;
+
 }
 
 .ct-form {
@@ -56,7 +58,7 @@
 }
 
 .ct-label {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-weight: 400;
   color: #111;
@@ -68,14 +70,15 @@
   border: 1px solid #ccc;
   border-radius: 0px;
   padding: 0 12px;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   outline: none;
   box-sizing: border-box;
+  background: #f5f5f5;
 }
 
 .ct-input:focus {
-  border-color: #aaa;
+  border-color: #dbdada;
 }
 
 .ct-textarea {
@@ -83,29 +86,31 @@
   border: 1px solid #ccc;
   border-radius: 0px;
   padding: 10px 12px;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   outline: none;
   resize: vertical;
   box-sizing: border-box;
+  background: #f5f5f5;
 }
 
 .ct-textarea:focus {
-  border-color: #aaa;
+  border-color: #eae4e4;
 }
 
 .ct-submit {
-  width: 120px;
-  height: 44px;
+  width: 100px;
+  height: 40px;
   border: none;
   border-radius: 4px;
   background: linear-gradient(90deg, #b8e0f7, #f4a8d4);
-  font-family: 'Inter', sans-serif;
-  font-size: 15px;
-  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
   color: #fff;
   cursor: pointer;
   transition: opacity 0.2s;
+  margin-bottom: 5px;
 }
 
 .ct-submit:hover {
@@ -118,13 +123,13 @@
 }
 
 .ct-success {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   color: #4caf50;
 }
 
 .ct-error {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   color: #e53935;
 }

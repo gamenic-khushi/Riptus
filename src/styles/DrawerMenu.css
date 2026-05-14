@@ -66,7 +66,7 @@
   display: inline-block;
   text-decoration: none;
   color: #fff;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 13px;
   font-weight: 400;
   letter-spacing: 0.02em;
@@ -92,7 +92,7 @@
 .dm-nav a {
   text-decoration: none;
   color: #fff;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -108,7 +108,7 @@
 /* Bottom URL */
 .dm-url {
   color: #fff;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 13px;
   text-decoration: none;
   letter-spacing: 0.03em;

@@ -6,26 +6,27 @@
 }
 
 .sv-content {
-  padding: 60px 40px 60px 120px;
+  padding: 60px 40px 60px 160px;
   display: flex;
   flex-direction: column;
 }
 
 .sv-heading {
-  font-family: 'Inter', sans-serif;
-  font-size: 48px;
+  font-family: 'Montserrat';
+  font-size: 42px;
   font-weight: 700;
   color: #111;
   line-height: 1;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
+  margin-top: 15px;
 }
 
 .sv-bar {
-  width: 160px;
+  width: 136px;
   height: 10px;
   border-radius: 0px;
   background: linear-gradient(90deg, #b8e0f7, #f4a8d4);
-  margin-bottom: 40px;
+  margin-bottom: 22px;
 }
 
 .sv-body {
@@ -44,18 +45,20 @@
 }
 
 .sv-item-title {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat';
   font-size: 24px;
   font-weight: 700;
   color: #111;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
   line-height: 1.4;
+  letter-spacing: 1.7px;
 }
 
 .sv-item-text {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 15px;
   font-weight: 400;
+  
   color: #333;
   line-height: 1.8;
   text-align: justify;
@@ -64,6 +67,8 @@
 
 .sv-image-wrap {
   flex-shrink: 0;
+  margin-left: -34px;
+  margin-top: 30px;
 }
 
 .sv-image {

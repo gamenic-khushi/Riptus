@@ -29,11 +29,11 @@
 ─────────────────────────────────────────────── */
 .gradient-rect {
   position: absolute;
-  right: 15%;           /* slightly bleed off edge */
-  top: 50%;
+  right: 20%;           /* slightly bleed off edge */
+  top: 45%;
   transform: translateY(-50%);
-  width: 25%;             /* wider so it meets the text */
-  height: 85%;
+  width: 23%;             /* wider so it meets the text */
+  height: 82%;
   /* border-radius: 16px; */
   background: linear-gradient(180deg, #b8e0f7 0%, #f4a8d4 100%);
   z-index: 0;
@@ -54,35 +54,36 @@
 
 /* Giant "Welcome!" — wide enough to overlap gradient rect */
 .welcome {
-  font-family: 'Inter', sans-serif;
-  font-size: clamp(90px, 11vw, 220px);
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(90px, 10vw, 220px);
   font-weight: 700;
   color: #111;
   line-height: 0.9;
-  letter-spacing: 4px;
+  letter-spacing: 0.7px;
   white-space: nowrap;
-  margin-top: 8%;
-  margin-left: 8.1%;      /* shift left to overlap gradient */
+  margin-top: 6%;
+  margin-left: 6.5%;      /* shift left to overlap gradient */
   width: 100%;             /* stretch full column width */
 }
 .subtitle {
-  font-family: 'Inter', sans-serif;
-  font-size: clamp(20px, 1.78vw, 42px);
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(20px, 1.7vw, 42px);
   font-weight: 80;
   color: #000;
   line-height: 0.95;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.2px;
   white-space: nowrap;
-  margin-left: 9.2%;
+  margin-left: 8%;
+  margin-top: -0.5%;
 }
 
 .company-jp {
-  font-family: 'Inter', sans-serif;
-  font-size: 17px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
    font-weight: 700;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.1em;
   color: transparent;
-  background: linear-gradient(90deg, #a78bfa, #ec4899);
+  background: linear-gradient(90deg, #b8e0f7, #f4a8d4);
   -webkit-background-clip: text;
   background-clip: text;
   display: inline-block;
